@@ -315,7 +315,7 @@ export default {
 ```js
 <template>
   <v-container id="targets" v-if="showChart.show" class="grey lighten-4 my-4" fluid>
-    <v-row >
+    <v-row>
       <draggable class="row wrap">
         <v-col>
           <v-card width="400" height="450">
@@ -333,23 +333,10 @@ export default {
 
         <!-- add availables slots -->
         <v-col v-for="i in addSlots" :key="i">
-          <v-row style="height:450px;">
+          <v-row>
             <v-col>
-              
               <!-- ADD HERE OTHER CHARTS -->
-              <v-card width="400" height="450">
-                <v-card-title>
-                  <span>Slot id: {{i}}</span>
-                  <div class="flex-grow-1"></div>
-                  <span>
-                    <v-icon>{{iconDraggable}}</v-icon>
-                  </span>
-                </v-card-title>
-                <v-divider></v-divider>
-                <v-card-text>
-                    available slot for chart
-                </v-card-text>
-              </v-card>
+              <div class="slotSpace"></div>
             </v-col>
           </v-row>
         </v-col>
@@ -376,6 +363,10 @@ export default {
 };
 </script>
 <style lang="scss">
+.slotSpace {
+  width: 400px;
+  height: 450px;
+}
 </style>
 ```
 
