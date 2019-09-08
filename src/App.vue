@@ -85,7 +85,6 @@ import { findDistrictByID, getArrayOfElements } from "./utils/lodash";
 import { mdiAccount, mdiFinance, mdiBomb, mdiLoginVariant } from "@mdi/js";
 export default {
   name: "dashboard",
-
   data() {
     return {
       //List districts
