@@ -382,6 +382,10 @@ import Chart from "../components/Chart";
 import Draggable from "vuedraggable";
 ```
 
+### Reference:
+  - https://vue-chartjs.org/guide/
+  - https://github.com/SortableJS/Vue.Draggable
+  - https://sortablejs.github.io/Vue.Draggable/#/simple
 
 
 
