@@ -1,6 +1,5 @@
 <script>
 import { HorizontalBar } from "vue-chartjs";
-
 export default {
   extends: HorizontalBar,
   props: ["chartData", "options"],
