@@ -81,12 +81,12 @@ export default new Router({
 ```js
 <template>
   <v-app id="dashboard">
+  
     <!-- App bar on top -->
     <v-app-bar app clipped-left color="blue-grey darken-1" dark>
       <!-- 3lines icon on top-left which hides the navigation-drawer -->
       <v-app-bar-nav-icon @click="hide = !hide"></v-app-bar-nav-icon>
       <span class="title ml-3 mr-5">Dashoboard Districts</span>
-
       <div class="flex-grow-1"></div>
 
       <!-- tooltip for the icon button -->
@@ -105,6 +105,7 @@ export default new Router({
     <v-navigation-drawer v-model="hide" app clipped color="blue-grey darken-1" dark>
       <!-- header of the navigation-drawer -->
       <v-list-item-title class="title">
+      
         <!-- dropdown of the districts list -->
         <v-container>
           <v-row>
@@ -122,7 +123,6 @@ export default new Router({
           </v-row>
         </v-container>
       </v-list-item-title>
-
       <v-divider></v-divider>
 
       <!-- body of the navigation-drawer -->
@@ -164,7 +164,6 @@ import { findDistrictByID, getArrayOfElements } from "./utils/lodash";
 import { mdiAccount, mdiFinance, mdiBomb, mdiLoginVariant } from "@mdi/js";
 export default {
   name: "dashboard",
-
   data() {
     return {
       //List districts
@@ -178,9 +177,8 @@ export default {
         { id: 7, name: "Gozo and Comino" }
       ],
       districtSelected: undefined,
-
       listcustomersfiltered: [],
-
+      
       //Data collection for the chart
       datacollection: {
         labels: [],
@@ -193,13 +191,12 @@ export default {
           }
         ]
       },
-
+      
       //chart options
       options: {
         responsive: true,
         maintainAspectRatio: false
       },
-
       listCustomers: {
         list: []
       },
@@ -225,6 +222,7 @@ export default {
       showChart: {
         show: false
       },
+      //Slots as default = 5
       slots: {
         numAvailable: 5
       }
@@ -254,11 +252,7 @@ export default {
     randomColorCustomers() {
       var colorArray = [];
       var rgba = "";
-      var rgb = {
-        red: "",
-        green: "",
-        blue: ""
-      };
+      var rgb = {red: "", green: "", blue: ""};
       for (let cust in this.datacollection.labels) {
         rgb.red = Math.floor(Math.random() * 255);
         rgb.green = Math.floor(Math.random() * 255);
