@@ -311,7 +311,7 @@ export default {
 </style>
 ```
 
-## Targets.vue:
+### Targets.vue
 ```js
 <template>
   <v-container id="targets" v-if="showChart.show" class="grey lighten-4 my-4" fluid>
@@ -370,13 +370,13 @@ export default {
 </style>
 ```
 
-## Sub-components:
+## Sub-components
 ```js
 import Chart from "../components/Chart";
 import Draggable from "vuedraggable";
 ```
 
-### Reference:
+### Reference
   - https://vue-chartjs.org/guide/
   - https://github.com/SortableJS/Vue.Draggable
   - https://sortablejs.github.io/Vue.Draggable/#/simple
