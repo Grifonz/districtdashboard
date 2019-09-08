@@ -114,14 +114,6 @@ export default {
           }
         ]
       },
-
-      //Per polar area chart
-      /*options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        enabled: true
-      },*/
-
       // Bar chart options
       options: {
         responsive: true,
@@ -147,19 +139,11 @@ export default {
           icon: mdiBomb,
           route: "/other"
         }
-        /*{
-          id:4,
-          title: "Brands",
-          icon:"",
-          route:"/brands"
-        }*/
       ],
       resetDataIcon: mdiLoginVariant,
-
       hide: true,
       showChart: {
-        show: false,
-        text: "no chart data"
+        show: false
       },
       slots: {
         numAvailable: 5
@@ -172,11 +156,9 @@ export default {
       var arrayTemp = require("./api/listCustomers.json");
       this.$set(this.listCustomers, "list", arrayTemp);
     },
-
     clear() {
       this.districtSelected = undefined;
     },
-
     reset() {
       var resetLabels = undefined;
       var resetOptions = {
@@ -209,16 +191,6 @@ export default {
       }
       return colorArray;
     },
-
-/*
-    getRandomNumSlots() {
-      var tempNum = Math.floor(Math.random() * 9);
-      if (tempNum < 2) {
-        tempNum = this.slots.numAvailable;
-      }
-      return tempNum;
-    },
-*/
     getCustomersByDistrict() {
       this.reset();
 
@@ -236,7 +208,6 @@ export default {
         listCustomersFiltered,
         "customername"
       );
-
       if (listNameCustomers.length > 0) {
         this.showChart.show = true;
         this.showChart.text = "Data OK";
@@ -259,11 +230,7 @@ export default {
           data: datarray
         }
       ];
-
       this.$set(this.datacollection, "datasets", valueProp);
-
-      //var n = this.getRandomNumSlots();
-      //this.$set(this.slots, "numAvailable", n);
     }
   },
   mounted() {
