@@ -4,6 +4,10 @@ Districtdashboard is a dashboard designed to allow the user to verify their cust
 From the navigation bar it is possible to verify the goals reached by the user thanks to the target tab.
 The charts can be dragged and dropped according to the user needs
 
+## Demo
+
+![demo gif](https://imgur.com/oIwsoRT)
+
 ## Project setup
 ```
 npm install
