@@ -5,7 +5,7 @@ From the navigation bar it is possible to verify the goals reached by the user t
 The charts can be dragged and dropped according to the user needs
 
 ## Demo
-[Imgur](https://i.imgur.com/oIwsoRT.gif)
+[District Dashboard](https://i.imgur.com/oIwsoRT.gif)
 
 ## Project setup
 ```
