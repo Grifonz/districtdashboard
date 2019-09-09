@@ -1,6 +1,6 @@
 # DistrictDashboard
 
-Districtdashboard is a dashboard designed to allow the user to verify their customer portfolio.
+Districtdashboard is a dashboard designed to allow the users to verify their customer portfolio.
 From the navigation bar it is possible to check the goals reached by the user clicking on the "Chart tab".
 The charts can be dragged and dropped according to the user needs
 
