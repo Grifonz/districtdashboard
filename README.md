@@ -283,10 +283,8 @@ export default {
       );
       if (listNameCustomers.length > 0) {
         this.showChart.show = true;
-        this.showChart.text = "Data OK";
       } else {
         this.showChart.show = false;
-        this.showChart.text = "no chart data";
       }
       this.$set(this.datacollection, "labels", listNameCustomers);
       var datarray = getArrayOfElements(listCustomersFiltered, "totamount");
